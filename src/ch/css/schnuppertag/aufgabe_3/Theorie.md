@@ -6,6 +6,6 @@ Scanner scanner = new Scanner(System.in);
 </pre>
 Jetzt hast du jedoch erst einen Scanner erstellt, aber noch nichts aus der Konsole ausgelesen. Verwende zum Auslesen einfach folgenden Codeschnipsel:
 <pre>
-scanner.nextLine();
+String var = scanner.nextLine();
 </pre>
 Das Ganze kannst du dann natürlich auch in eine Variable abspeichern oder direkt weiter verarbeiten.
