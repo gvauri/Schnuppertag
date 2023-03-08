@@ -1,27 +1,20 @@
 # Theorie für Aufgabe 2
 
-Das If-Else Statement lässt den Code eine Entscheidung treffen.<br/>
-Falls die Bedingung wahr ist, wird der erste Block ausgeführt, sonst der zweite Block: <br/><br/>
+Bei dieser Aufgabe schauen wir Scanner an. Mit dem Scanner kann eine Eingabe gemacht werden.
+
+So erstellt man einen Scanner, speichert die Eingabe in einer Variabel und gibt diese aus:
+
 <pre>
-if(Bedingung){
-    System.out.println("Die Bedingung trifft zu");
-}else{
-    System.out.println("Die Bedingung trifft NICHT zu");
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Gebe eine Zahl ein: ");
+        Scanner scanner1 = new Scanner(System.in); // Hier wird der Scanner erstellt
+        int eingabe1 = scanner1.nextInt(); // Hier wird die Eingabe vom Scanner in einer Variabel gespeichert
+
+        System.out.println(eingabe1);
+    }
 }
 </pre>
 
-
-Bedingungen sind oft Vergleiche zwischen zwei Werten, die mit folgenden Operatoren durchgeführt werden können:<br/>
-var1 == var2 ->  <b>Ist var1 das gleiche wie var2? Achtung: == wird nur bei Zahlen verwendet!<br/></b>
-var1.equals(var2) -> <b>Möchtest du Texte miteinander vergleichen, so verwende .equals! </b>
-
-var1 > var2 -> <b>Ist var1 grösser als var2?<br/></b>
-var1 < var2 -> <b>Ist var1 kleiner als var2?<br/></b>
-var1 >= var2 -> <b>Ist var1 grösser oder gleich gross wie var2?<br/></b>
-var1 <= var2 -> <b>Ist var2 kleiner oder gleich gross wie var2?<br/></b>
-<br/>
-Natürlich müssen nicht immer zwei Variablen miteinander verglichen werden,
-es könnte auch eine Variable mit einem festen Wert verglichen werden:<br/>
-var1.equals("Test") -> <b>Ist in var1 das Wort "Test" gespeichert?</b><br><br>
-Bedingungen und das If-Else Statement sind sehr wichtige Basics des Programmierens.
-Stelle sicher, dass du die Erklärung verstanden hast.
+Falls man einen String speichern will, muss man bei der Variabel "String eingabe1 = scanner1.nextLine();" machen.
